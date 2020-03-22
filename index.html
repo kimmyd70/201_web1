@@ -4,14 +4,26 @@
 <head>
     <meta charset='utf-8'> <!--must for emoji code-->
     <title>World Travel</title>
+    <style>
+        h1 {font-size: 42px; color:greenyellow; text-align: center; font-weight: bold;}
+    </style>
+
 </head>
 
-<body style="background-color: grey;">
+<body style="background-color: rgb(134, 128, 128);">
+  <header>
+
+  </header>
 
   <main>
-        <h1 style="font-size:150px; color:greenyellow; text-align: center;">Class 1 Lab--Let's Travel the World!!</h1>
-        <p style="font-size:300px; text-align: center;">&#128511;&#128511;&#128511;&#128511;&#128511;&#128511;</p>
-        <h2 style="font-size:100px; color: darkblue; text-align: center;">I'm going to ask you some travel questions<br>Be honest, please</h2>
+        <h1>Class 1 Lab -- Let's Travel the World!!</h1>
+        <p style="font-size: 175px; text-align: center;">&#128511;&#128511;&#128511;&#128511;&#128511;&#128511;</p>
+        <h2 style="font-size: 36px; color: darkblue; text-align: center;">I'm going to ask you some travel questions<br>Let's build a wish list.</h2>
+
+        <p style="padding-top: 50px; padding-bottom: 50px;font-size: 24px; color: #ffffff; text-align:center; background-color: rgb(80, 70, 70);">Q1: What's your name? </p>
+        <p style="padding-top: 50px; padding-bottom: 50px;font-size: 24px; color: rgb(65, 61, 61); text-align:center; background-color: #ffffff;">Q2: Let's assume you like to travel.  What is the top country on your travel bucket list? </p>
+        <p style="padding-top: 50px; padding-bottom: 50px;font-size: 24px; color: #ffffff; text-align:center; background-color: rgb(80, 70, 70);">Q3: What is the next country on your travel bucket list? </p>
+        <p style="padding-top: 50px; padding-bottom: 50px;font-size: 24px; color: rgb(80, 70, 70); text-align:center; background-color: #ffffff;">Q4: You must have a favorite site you want to visit.  What is it? </p>
 
     <script> //Q1 = name
         var name = prompt('Hi. What\'s your name?');
@@ -20,25 +32,26 @@
     </script>
 
     <script> //Q2 = #1 Country on bucket list
-        var C1 = prompt('Let\'s assume you like to travel.  What is the top country on your travel bucket list?');
-        console.log('The user\'s name and bucket list #1 are: ' + name + ' and ' + C1);
-        alert('Hi ' + name + '. ' + C1 + ' is a great choice!');
+        var country1 = prompt('Let\'s assume you like to travel.  What is the top country on your travel bucket list?');
+        console.log('The user\'s name and bucket list #1 are: ' + name + ' and ' + country1);
+        alert(country1 + ' is a great choice, ' + name + '!');
     </script>
 
     <script> //Q3 = #2 Country on bucket list
-        var C2 = prompt('What is the next country on your travel bucket list?');
-        console.log('The user\'s name, bucket list #1, and bucket list #2 are: ' + name + ', ' + C1 + ', and ' + C2);
-        alert(name + ', ' + C1 + ' and ' + C2 + ' are both excellent choices!');
+        var country2 = prompt('What is the next country on your travel bucket list?');
+        console.log('The user\'s name, bucket list #1, and bucket list #2 are: ' + name + ', ' + country1 + ', and ' + country2);
+        alert(name + ', ' + country1 + ' and ' + country2 + ' are both excellent choices!');
     </script>
 
     <script> //Q4 = #1 tourist site on on bucket list
-        var S1 = prompt(name + ', you must have a favorite site in ' + C1 + ' or ' + C2 + ' you want to visit.  What is it?');
-        console.log('The user\'s name, bucket list countries #1 and #2, and bucket list Site are: ' + name + ', ' + C1 + ', ' + C2 + ', and ' + S1);
-        alert('Wow! ' + name + ". You should have lots of fun visiting " + C1 + ', ' + C2 + ', and ' + S1);
+        var site = prompt(name + ', you must have a favorite site in ' + country1 + ' or ' + country2 + ' you want to visit.  What is it?');
+        console.log('The user\'s name, bucket list countries #1 and #2, and bucket list Site are: ' + name + ', ' + country1 + ', ' + country2 + ', and ' + site);
+        alert('Wow ' + name + "! You should have lots of fun visiting " + country1 + ', ' + country2 + ', and ' + site);
    </script>
 
   </main>
 </body>
-<footer style="font-size: 25px; color: greenyellow">
+
+<footer style="font-size: 24px; color: greenyellow; margin-top: 500px;">
 &copy @kimmyd70 on GitHub
 </footer>

@@ -1,29 +1,44 @@
 <!DOCTYPE html>
+    <!--First website of 201; asking questions and returning alerts-->
 
 <head>
-    <title>This is the the Way!</title>
+    <meta charset='utf-8'> <!--must for emoji code-->
+    <title>World Travel</title>
 </head>
-<body>
-    <style>
-        h1 {
-            color: red;
-        }
 
-        p {
-            color: red;
-        }
-    </style>
-    <h1>Star Wars is the Best!</h1>
-    <p>This is the way!</p>
-    <p style="background-color: orange" >Don't remove the helmet</p>
-    <h2 style="background-color: yellow">I have spoken!</h2>
+<body style="background-color: grey;">
 
-    <h2>No style here</h2>
-    <script>
-        // var welcomeMessage = prompt("Hello Mando, did you find baby yoda");
-        console.log("This is the answer to the welcomeMessage prompt " + welcomeMessage);
+  <main>
+        <h1 style="font-size:150px; color:greenyellow; text-align: center;">Class 1 Lab--Let's Travel the World!!</h1>
+        <p style="font-size:300px; text-align: center;">&#128511;&#128511;&#128511;&#128511;&#128511;&#128511;</p>
+        <h2 style="font-size:100px; color: darkblue; text-align: center;">I'm going to ask you some travel questions<br>Be honest, please</h2>
+
+    <script> //Q1 = name
+        var name = prompt('Hi. What\'s your name?');
+        console.log('The user\'s name is: ' + name);
+        alert('Hi ' + name + '! (please click OK as needed)');
     </script>
-</body>
-<footer>
 
+    <script> //Q2 = #1 Country on bucket list
+        var C1 = prompt('Let\'s assume you like to travel.  What is the top country on your travel bucket list?');
+        console.log('The user\'s name and bucket list #1 are: ' + name + ' and ' + C1);
+        alert('Hi ' + name + '. ' + C1 + ' is a great choice!');
+    </script>
+
+    <script> //Q3 = #2 Country on bucket list
+        var C2 = prompt('What is the next country on your travel bucket list?');
+        console.log('The user\'s name, bucket list #1, and bucket list #2 are: ' + name + ', ' + C1 + ', and ' + C2);
+        alert(name + ', ' + C1 + ' and ' + C2 + ' are both excellent choices!');
+    </script>
+
+    <script> //Q4 = #1 tourist site on on bucket list
+        var S1 = prompt(name + ', you must have a favorite site in ' + C1 + ' or ' + C2 + ' you want to visit.  What is it?');
+        console.log('The user\'s name, bucket list countries #1 and #2, and bucket list Site are: ' + name + ', ' + C1 + ', ' + C2 + ', and ' + S1);
+        alert('Wow! ' + name + ". You should have lots of fun visiting " + C1 + ', ' + C2 + ', and ' + S1);
+   </script>
+
+  </main>
+</body>
+<footer style="font-size: 25px; color: greenyellow">
+&copy @kimmyd70 on GitHub
 </footer>
